@@ -1,8 +1,22 @@
 import Vue from 'vue'
-import App from './App.vue'
+import Buefy from 'buefy'
+import 'buefy/dist/buefy.css'
 
-Vue.config.productionTip = false
+Vue.use(Buefy)
+
+import App from "./App.vue";
+import router from "./router";
+
+import Default from "./layouts/Default.vue";
+import NoSidebar from "./layouts/NoSidebar.vue";
+
+
+Vue.component("default-layout", Default);
+Vue.component("no-sidebar-layout", NoSidebar);
+
+Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  router,
+  render: h => h(App)
+}).$mount("#app");

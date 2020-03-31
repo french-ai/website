@@ -1,28 +1,49 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <component :is="layout">
+      <router-view/>
+    </component>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+const default_layout = "default";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  computed: {
+    layout() {
+      return (this.$route.meta.layout || default_layout) + "-layout";
+    }
+  },
+
+  created() {
+    // nothing defined here (when this.$route.path is other than "/")
+    console.log(this.$route, this.$route.meta.layout);
+  },
+
+  updated() {
+    // something defined here whatever the this.$route.path
+    console.log(this.$route, this.$route.meta.layout);
   }
-}
+};
 </script>
 
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+  html, body {
+    font-family: 'Roboto', sans-serif;
+  }
+  a {
+    font-family: 'Sen', sans-serif;
+  }
+
+  html { position: absolute; top: 0; bottom: 0; left: 0; right: 0; }    
+/* alternatively: html { min-height: 100%; height: 100%; } */    
+
+  html { min-height: 100%; }
+  body { min-height: 100%; }
+
 </style>
