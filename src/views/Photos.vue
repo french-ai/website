@@ -1,20 +1,18 @@
 <template>
   <div class="section">
-    <p v-if="loading" class="notification is-info">
-      Loading
-    </p>
+    <template>
+      <div class="container has-text-centered">
+        <h1 class="title">Look at my photos</h1>
 
-    <template v-else>
-      <h1 class="title">Look at my photos</h1>
-
-      <article v-for="photo in photos" :key="photo.id" class="box has-text-centered">
-        <h2 class="title is-3">
-          <router-link :to="{name: 'photo', params: {id: photo.id}}">{{ photo.title }}</router-link>
-        </h2>
-        <div class="content">
-          <img :src="photo.thumbnailUrl" :alt="photo.title"/>
-        </div>
-      </article>
+        <article v-for="photo in photos" :key="photo.id" class="box has-text-centered">
+          <h2 class="title is-3">
+            <router-link :to="{name: 'photo', params: {id: photo.id}}">{{ photo.title }}</router-link>
+          </h2>
+          <div class="content">
+            <img :src="photo.thumbnailUrl" :alt="photo.title"/>
+          </div>
+        </article>
+      </div>
     </template>
   </div>
 </template>

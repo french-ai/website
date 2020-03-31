@@ -12,17 +12,12 @@
             <b-navbar-item tag="router-link" :to="{ name: 'home' }">
               French AI
             </b-navbar-item>
+            <b-navbar-item tag="router-link" :to="{ name: 'projects' }">
+              Projets
+            </b-navbar-item>
             <b-navbar-item tag="router-link" :to="{ name: 'about' }">
                 À propos
             </b-navbar-item>
-            <b-navbar-dropdown hoverable label="Info">
-                <b-navbar-item href="https://github.com/french-ai" target="_blank">
-                    GitHub
-                </b-navbar-item>
-                <b-navbar-item href="#">
-                    Contact
-                </b-navbar-item>
-            </b-navbar-dropdown>
         </template>
 
         <template slot="end">

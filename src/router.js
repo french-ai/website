@@ -19,22 +19,28 @@ export default new Router({
       meta: { layout: "no-sidebar" },
       component: require("@/views/Home.vue").default // load sync home
     },
+    // {
+    //   path: "/photos",
+    //   name: "photos",
+    //   component: () => import("@/views/Photos.vue")
+    // },
     {
-      path: "/photos",
-      name: "photos",
-      component: () => import("@/views/Photos.vue")
-    },
-    {
-      path: "/about-us",
+      path: "/a-propos",
       name: "about",
       meta: { layout: "no-sidebar" },
       component: () => import("@/views/About.vue")
     },
     {
-      path: "/story/:id",
-      name: "post",
-      component: () => import("@/views/Post.vue")
+      path: "/projets",
+      name: "projects",
+      meta: { layout: "no-sidebar" },
+      component: () => import("@/views/Projects.vue")
     },
+    // {
+    //   path: "/story/:id",
+    //   name: "post",
+    //   component: () => import("@/views/Post.vue")
+    // },
     {
       path: "*",
       name: "404*",
