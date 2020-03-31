@@ -11,12 +11,11 @@ const base =
 export default new Router({
   mode: "history",
   base,
-
   routes: [
     {
       path: "/",
       name: "home",
-      meta: { layout: "no-sidebar" },
+      meta: { layout: "default" },
       component: require("@/views/Home.vue").default // load sync home
     },
     // {
@@ -27,13 +26,13 @@ export default new Router({
     {
       path: "/a-propos",
       name: "about",
-      meta: { layout: "no-sidebar" },
+      meta: { layout: "default" },
       component: () => import("@/views/About.vue")
     },
     {
       path: "/projets",
       name: "projects",
-      meta: { layout: "no-sidebar" },
+      meta: { layout: "default" },
       component: () => import("@/views/Projects.vue")
     },
     // {

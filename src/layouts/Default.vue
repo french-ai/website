@@ -1,3 +1,13 @@
+<template>
+  <div>
+    <Navbar/>
+    <div class="container">
+      <slot/>
+    </div>
+    <Footer />
+  </div>
+</template>
+
 <script>
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,23 +19,3 @@ export default {
   }
 };
 </script>
-
-<template>
-  <div>
-    <Navbar/>
-
-    <div class="container section">
-      <div class="columns">
-        <div class="column is-8">
-          <slot/>
-        </div>
-
-        <div class="column is-4">
-          <side-bar/>
-        </div>
-      </div>
-    </div>
-
-    <Footer/>
-  </div>
-</template>

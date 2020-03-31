@@ -23,15 +23,15 @@
         <template slot="end">
             <b-navbar-item tag="div">
                 <div class="buttons">
-                    <a class="button is-primary" href="https://discord.gg/KdTANuj" target="_blank">
+                    <a class="button is-dark" href="https://discord.gg/KdTANuj" target="_blank">
                       <img
-                          src="https://raw.githubusercontent.com/aquadzn/website/master/src/assets/png/discord_logo.png"
+                          src="../assets/png/discord_logo.png"
                           alt="Discord"
                       >
                     </a>
-                    <a class="button" href="https://github.com/french-ai" target="_blank">
+                    <a class="button is-dark" href="https://github.com/french-ai" target="_blank">
                       <img
-                          src="https://raw.githubusercontent.com/aquadzn/website/master/src/assets/png/github_logo.png"
+                          src="../assets/png/github_logo.png"
                           alt="GitHub"
                       >
                     </a>

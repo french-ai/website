@@ -1,19 +1,14 @@
 import Vue from 'vue'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
-
-Vue.use(Buefy)
-
 import App from "./App.vue";
 import router from "./router";
-
 import Default from "./layouts/Default.vue";
-import NoSidebar from "./layouts/NoSidebar.vue";
+import VueTilt from 'vue-tilt.js'
 
-
+Vue.use(Buefy)
+Vue.use(VueTilt)
 Vue.component("default-layout", Default);
-Vue.component("no-sidebar-layout", NoSidebar);
-
 Vue.config.productionTip = false;
 
 new Vue({

@@ -29,27 +29,6 @@
     </div>
   </section>
 </template>
-<!--
-<template>
-  <section class="hero is-fullheight">
-    <div class="hero-body">
-      <div class="columns">
-        <div class="column is-half">
-          <figure class="image is-fullwidth">
-            <img src="../assets/svg/about.svg">
-          </figure>
-        </div>
-        <div class="column is-half">
-          <h1 class="title">Qui sommes-nous ?</h1>
-          <div v-for="user in info" :key="user" class="user">
-            {{ user.login}}: {{ user.html_url }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</template>
-!-->
 
 <script>
 import axios from 'axios';
@@ -69,6 +48,7 @@ export default {
         axios
         .get('https://api.github.com/orgs/french-ai/members')
         .then(response => (this.info = response.data))
+        .catch(error => console.log(error))
     }
 }
 </script>

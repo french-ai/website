@@ -32,21 +32,28 @@ export default {
 
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@600&display=swap');
+  
+  * {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+  }
 
-  html, body {
+  html {
     font-family: 'Roboto', sans-serif;
-  }
-  a {
-    font-family: 'Sen', sans-serif;
+    -webkit-text-size-adjust: 100%;
   }
 
-  html { position: absolute; top: 0; bottom: 0; left: 0; right: 0; }    
-/* alternatively: html { min-height: 100%; height: 100%; } */    
+  body {
+    margin: 0;
+  }
 
-  html { min-height: 100%; }
-  body { min-height: 100%; }
+  a, button, footer {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
 
   .fade-enter-active,
   .fade-leave-active {
