@@ -1,17 +1,12 @@
 <template>
   <section class="hero is-fullheight">
     <div class="hero-body">
-      <!-- <div class="container has-text-centered">
-        <h1 class="title">Homepage</h1>
-        <p class="subtitle">Welcome!</p>
-      </div> -->
       <div class="columns">
         <div class="column is-half">
           <figure class="image is-fullwidth">
-            <img src="../assets/svg/home.svg">
+            <img src="https://raw.githubusercontent.com/aquadzn/website/master/src/assets/svg/home.svg">
           </figure>
         </div>
-        <!-- <div class="column"></div> -->
         <div class="column is-half">
           <h1 class="title">Communauté francophone sur l'intelligence artificielle</h1>
           <p class="subtitle">Plus de 2000 membres présents!</p>

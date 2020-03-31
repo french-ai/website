@@ -13,10 +13,10 @@
               French AI
             </b-navbar-item>
             <b-navbar-item tag="router-link" :to="{ name: 'about' }">
-                About
+                À propos
             </b-navbar-item>
             <b-navbar-dropdown hoverable label="Info">
-                <b-navbar-item tag="router-link" :to="{ name: 'photos' }">
+                <b-navbar-item href="https://github.com/french-ai" target="_blank">
                     GitHub
                 </b-navbar-item>
                 <b-navbar-item href="#">
@@ -30,13 +30,13 @@
                 <div class="buttons">
                     <a class="button is-primary" href="https://discord.gg/KdTANuj" target="_blank">
                       <img
-                          src="../assets/png/discord_logo.png"
+                          src="https://raw.githubusercontent.com/aquadzn/website/master/src/assets/png/discord_logo.png"
                           alt="Discord"
                       >
                     </a>
                     <a class="button" href="https://github.com/french-ai" target="_blank">
                       <img
-                          src="../assets/png/github_logo.png"
+                          src="https://raw.githubusercontent.com/aquadzn/website/master/src/assets/png/github_logo.png"
                           alt="GitHub"
                       >
                     </a>
