@@ -4,23 +4,44 @@
         <div class="card-content">
         <div class="media">
             <div class="media-left">
-            <figure class="image is-48x48">
+            <figure class="image is-64x64">
                 <img :src="avatar" alt="User avatar">
             </figure>
             </div>
             <div class="media-content">
             <p class="title is-4">{{ repository }}</p>
-            <a class="subtitle is-6">@{{ profile }}</a>
+            <p class="subtitle is-6">@{{ profile }}</p>
             </div>
         </div>
 
-        <div class="content">
-            {{ description }}
-            <p>{{ lang }}</p>
-            <br>
-            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+        <div class="content has-text-centered">
+        <p>{{ description }}</p>
+<nav class="level is-mobile">
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Langage</p>
+      <p class="title">{{ lang }}</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Stars</p>
+      <p class="title">{{ stars }}</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Forks</p>
+      <p class="title">{{ forks }}</p>
+    </div>
+  </div>
+</nav>
+
         </div>
         </div>
+    <footer class="card-footer">
+        <a :href="url" target="_blank" class="card-footer-item">{{ profile }}/{{ repository }}</a>
+    </footer>
     </div>
     </div>
 </template>
@@ -33,7 +54,10 @@ export default {
         "repository": String,
         "profile": String,
         "description": String,
-        "lang": String
+        "lang": String,
+        "stars": String,
+        "forks": String,
+        "url": String
     }
 }
 </script>

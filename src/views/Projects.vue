@@ -8,12 +8,14 @@
     </div>
     <div class="columns is-multiline">
       <Repository
-      v-for="repo in info" v-bind:key="repo['id']"
-      v-bind:avatar="repo['avatar_url']"
-      v-bind:repository="repo.name"
-      v-bind:profile="repo['login']"
-      v-bind:description="repo.description"
-      v-bind:lang="repo.language"
+        v-bind:avatar="info.owner.avatar_url"
+        v-bind:repository="info.name"
+        v-bind:profile="info.owner.login"
+        v-bind:description="info.description"
+        v-bind:lang="info.language"
+        v-bind:stars="info.stargazers_count"
+        v-bind:forks="info.forks_count"
+        v-bind:url="info.html_url"
       />
     </div>
 

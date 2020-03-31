@@ -1,12 +1,5 @@
 {
-    "author": {
-        "1": "author_1",
-        "2": "author_2",
-        "3": "author_3"
-    },
-    "repository": {
-        "1": "repo_1",
-        "2": "repo_2",
-        "3": "repo_3"
-    }
+    "1": "https://github.com/aquadzn/coding-challenges",
+    "2": "https://github.com/SkalskiP/make-sense",
+    "3": "https://github.com/aquadzn/gpt2-french"
 }
