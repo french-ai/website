@@ -26,6 +26,10 @@
 import axios from 'axios';
 import Repository from "../components/Repository"
 
+// let one = "https://github.com/aquadzn/coding-challenges";
+// let two = "https://github.com/SkalskiP/make-sense";
+// let three = "https://github.com/aquadzn/gpt2-french";
+
 export default {
     name: "Project",
     components: {

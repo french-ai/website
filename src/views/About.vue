@@ -1,7 +1,7 @@
 <template>
   <section class="hero is-fullheight">
     <div class="hero-body">
-      <div class="columns">
+      <div class="columns is-multiline">
         <div class="column">
           <div class="container">
             <figure class="image">
