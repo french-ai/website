@@ -7,6 +7,7 @@ export default {
       'aquadzn/gpt2-french',
       'creme-ml/creme',
       'dhaitz/mplcyberpunk',
+      'french-ai/ressources',
     ];
   },
 };
