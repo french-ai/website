@@ -38,7 +38,12 @@
         </div>
       </div>
       <footer class="card-footer">
-        <a :href="url" target="_blank" class="card-footer-item">{{ profile }}/{{ repository }}</a>
+        <a
+          :href="url" target="_blank"
+          class="card-footer-item"
+        >
+          <u>{{ profile }}/{{ repository }}</u>
+        </a>
       </footer>
     </div>
   </div>
