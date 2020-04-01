@@ -1,6 +1,6 @@
 <template>
   <div class="column is-one-third">
-    <div v-tilt class="card">
+    <div v-tilt class="box">
       <div class="card-content">
         <div class="media">
           <div class="media-left">
@@ -14,24 +14,24 @@
           </div>
         </div>
         <div class="content has-text-centered">
-          <p>{{ description }}</p>
+          <p id="desc">{{ description }}</p>
           <nav class="level is-mobile">
             <div class="level-item has-text-centered">
               <div>
                 <p class="heading">Langage</p>
-                <p class="title">{{ lang }}</p>
+                <p class="title is-4">{{ lang }}</p>
               </div>
             </div>
             <div class="level-item has-text-centered">
               <div>
                 <p class="heading">Stars</p>
-                <p class="title">{{ stars }}</p>
+                <p style="color: #f1c40f" class="title is-4">{{ stars }}</p>
               </div>
             </div>
             <div class="level-item has-text-centered">
               <div>
                 <p class="heading">Forks</p>
-                <p class="title">{{ forks }}</p>
+                <p class="title is-4">{{ forks }}</p>
               </div>
             </div>
           </nav>
@@ -59,3 +59,23 @@
       }
   }
 </script>
+
+<style scoped>
+  .box {;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+  }
+
+  .media {
+    transform: translateZ(20px);
+  }
+
+  #desc {
+    padding-top: 30px;
+  }
+
+  .card-footer {
+    margin: 10px;
+    transform: translateZ(20px);
+  }
+</style>

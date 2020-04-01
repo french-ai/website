@@ -4,10 +4,15 @@
       <div class="container has-text-centered">
           <h1 class="title">Nos projets</h1>
           <p class="subtitle">Voice quelques projets réalisés par la communauté</p>
+          <b-tooltip type="is-light" label="Vous pouvez ajouter un projet en complétant une PR" position="is-bottom">
+            <a class="button is-info" href="https://discord.gg/KdTANuj" target="_blank">Ajoutez votre projet</a>
+          </b-tooltip>
       </div>
     </div>
     <div class="columns is-multiline">
       <Repository
+        v-for="info in infos"
+        :key="info.id"
         v-bind:avatar="info.owner.avatar_url"
         v-bind:repository="info.name"
         v-bind:profile="info.owner.login"
@@ -26,9 +31,13 @@
 import axios from 'axios';
 import Repository from "../components/Repository"
 
-// let one = "https://github.com/aquadzn/coding-challenges";
-// let two = "https://github.com/SkalskiP/make-sense";
-// let three = "https://github.com/aquadzn/gpt2-french";
+let urls = [
+  "https://api.github.com/repos/aquadzn/coding-challenges",
+  "https://api.github.com/repos/SkalskiP/make-sense",
+  "https://api.github.com/repos/aquadzn/gpt2-french",
+  "https://api.github.com/repos/aquadzn/website",
+  "https://api.github.com/repos/dhaitz/mplcyberpunk",
+]
 
 export default {
     name: "Project",
@@ -37,14 +46,22 @@ export default {
     },
     data() {
         return {
-            info: null
+            infos: []
         }
     },
     mounted() {
+      for (let i = 0; i < urls.length; i++) {
         axios
-        .get('https://api.github.com/repos/aquadzn/website')
-        .then(response => (this.info = response.data))
+        .get(urls[i])
+        .then(response => (this.infos.push(response.data)))
         .catch(error => console.log(error))
+      }
     }
 }
 </script>
+
+<style>
+  footer {
+    margin-top: 50px;
+  }
+</style>
