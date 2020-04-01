@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+import api from '../api';
 import Member from '../components/Member'
 
 export default {
@@ -45,8 +45,7 @@ export default {
         }
     },
     mounted() {
-        axios
-        .get('https://api.github.com/orgs/french-ai/members')
+        api.getMembers()
         .then(response => (this.info = response.data))
         .catch(error => console.log(error))
     }

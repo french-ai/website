@@ -15,9 +15,9 @@
             <p class="subtitle">Plus de 2000 membres présents!</p>
             <br/>
             <div class="buttons is-centered">
-                <b-button type="is-info" size="is-medium">Rejoignez-nous</b-button>
-                <b-tooltip type="is-light" label="Découvrez les projets des membres de la communauté" position="is-right" size="is-medium" multilined>
-                  <b-button type="is-danger" size="is-medium">Projets</b-button>
+                <b-button tag="a" href="https://discord.gg/KdTANuj" target="_blank" type="is-info" size="is-medium">Rejoignez-nous</b-button>
+                <b-tooltip type="is-light" label="Découvrez les projets des membres de la communauté" position="is-bottom" size="is-medium" multilined>
+                  <b-button tag="router-link" :to="{ name: 'projects' }" type="is-danger" size="is-medium">Projets</b-button>
                 </b-tooltip>
             </div>
           </div>

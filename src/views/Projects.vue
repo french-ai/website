@@ -5,7 +5,7 @@
           <h1 class="title">Nos projets</h1>
           <p class="subtitle">Voice quelques projets réalisés par la communauté</p>
           <b-tooltip type="is-light" label="Vous pouvez ajouter un projet en complétant une PR" position="is-bottom">
-            <a class="button is-info" href="https://discord.gg/KdTANuj" target="_blank">Ajoutez votre projet</a>
+            <b-button tag="a" href="https://github.com/french-ai/" target="_blank" type="is-info">Ajoutez votre projet</b-button>
           </b-tooltip>
       </div>
     </div>
@@ -28,15 +28,15 @@
 </template>
 
 <script>
-import axios from 'axios';
+import api from '../api';
 import Repository from "../components/Repository"
 
-let urls = [
-  "https://api.github.com/repos/aquadzn/coding-challenges",
-  "https://api.github.com/repos/SkalskiP/make-sense",
-  "https://api.github.com/repos/aquadzn/gpt2-french",
-  "https://api.github.com/repos/aquadzn/website",
-  "https://api.github.com/repos/dhaitz/mplcyberpunk",
+let repos = [
+  "aquadzn/coding-challenges",
+  "SkalskiP/make-sense",
+  "aquadzn/gpt2-french",
+  "aquadzn/website",
+  "dhaitz/mplcyberpunk",
 ]
 
 export default {
@@ -50,9 +50,8 @@ export default {
         }
     },
     mounted() {
-      for (let i = 0; i < urls.length; i++) {
-        axios
-        .get(urls[i])
+      for (let i = 0; i < repos.length; i++) {
+        api.getRepos(repos[i])
         .then(response => (this.infos.push(response.data)))
         .catch(error => console.log(error))
       }

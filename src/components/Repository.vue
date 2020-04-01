@@ -61,7 +61,7 @@
 </script>
 
 <style scoped>
-  .box {;
+  .box {
     transform-style: preserve-3d;
     transform: perspective(1000px);
   }
@@ -75,7 +75,12 @@
   }
 
   .card-footer {
-    margin: 10px;
+    margin-top: 10px;
     transform: translateZ(20px);
   }
+
+  .card-footer a {
+    color: hsl(0, 0%, 21%);
+  }
+
 </style>
