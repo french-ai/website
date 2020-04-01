@@ -4,7 +4,11 @@
       <div class="container has-text-centered">
           <h1 class="title">Nos projets</h1>
           <p class="subtitle">Voice quelques projets réalisés par la communauté</p>
-          <b-tooltip type="is-light" label="Vous pouvez ajouter un projet en complétant une PR" position="is-bottom">
+          <b-tooltip
+            type="is-light"
+            label="Vous pouvez ajouter un projet en complétant une PR"
+            position="is-bottom"
+          >
             <b-button tag="a" href="https://github.com/french-ai/" target="_blank" type="is-info">Ajoutez votre projet</b-button>
           </b-tooltip>
       </div>
@@ -29,34 +33,36 @@
 
 <script>
 import api from '../api';
-import Repository from "../components/Repository"
+import Repository from '../components/Repository.vue';
 
-let repos = [
-  "aquadzn/coding-challenges",
-  "SkalskiP/make-sense",
-  "aquadzn/gpt2-french",
-  "aquadzn/website",
-  "dhaitz/mplcyberpunk",
-]
+const repos = [
+  'aquadzn/coding-challenges',
+  'SkalskiP/make-sense',
+  'aquadzn/gpt2-french',
+  'aquadzn/website',
+  'dhaitz/mplcyberpunk',
+];
 
 export default {
-    name: "Project",
-    components: {
-      Repository
-    },
-    data() {
-        return {
-            infos: []
-        }
-    },
-    mounted() {
-      for (let i = 0; i < repos.length; i++) {
-        api.getRepos(repos[i])
-        .then(response => (this.infos.push(response.data)))
-        .catch(error => console.log(error))
-      }
+  name: 'Project',
+  components: {
+    Repository,
+  },
+  data() {
+    return {
+      infos: [],
+    };
+  },
+  mounted() {
+    // eslint-disable-next-line no-plusplus
+    for (let i = 0; i < repos.length; i++) {
+      api.getRepos(repos[i])
+        .then((response) => (this.infos.push(response.data)))
+        // eslint-disable-next-line no-console
+        .catch((error) => console.log(error));
     }
-}
+  },
+};
 </script>
 
 <style>

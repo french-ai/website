@@ -45,19 +45,19 @@
 </template>
 
 <script>
-  export default {
-      name: "Repository",
-      props: {
-          "avatar": String,
-          "repository": String,
-          "profile": String,
-          "description": String,
-          "lang": String,
-          "stars": String,
-          "forks": String,
-          "url": String
-      }
-  }
+export default {
+  name: 'Repository',
+  props: {
+    avatar: String,
+    repository: String,
+    profile: String,
+    description: String,
+    lang: String,
+    stars: String,
+    forks: String,
+    url: String,
+  },
+};
 </script>
 
 <style scoped>

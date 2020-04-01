@@ -43,11 +43,11 @@
 
 <script>
 export default {
-  name: "Navbar",
+  name: 'Navbar',
   data() {
     return {
-      open: false
+      open: false,
     };
-  }
+  },
 };
 </script>

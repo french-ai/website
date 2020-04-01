@@ -11,13 +11,13 @@
 
 <script>
 export default {
-    name: "Member",
-    props: {
-        "profile": String,
-        "username": String,
-        "avatar": String
-    }
-}
+  name: 'Member',
+  props: {
+    profile: String,
+    username: String,
+    avatar: String,
+  },
+};
 </script>
 
 <style>

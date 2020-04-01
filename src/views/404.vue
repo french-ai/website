@@ -13,7 +13,12 @@
           <div class="container has-text-centered">
             <h1 class="title">Vous êtes perdu ?</h1>
             <p class="subtitle">Retournez sur la page d'accueil</p>
-            <b-button tag="router-link" :to="{ name: 'home' }" type="is-info" size="is-medium">Accueil</b-button>
+            <b-button
+              tag="router-link" :to="{ name: 'home' }"
+              type="is-info"
+              size="is-medium"
+            >Accueil
+            </b-button>
           </div>
         </div>
       </div>

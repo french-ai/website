@@ -19,7 +19,12 @@
           Nous sommes une communauté de personnes intéressées par l'intelligence artificielle
         </h2>
         <div class="tile is-ancestor">
-          <Member v-for="user in info" :key="user.id" v-bind:profile="user.html_url" v-bind:username="user.login" v-bind:avatar="user.avatar_url"/>
+          <Member
+            v-for="user in info" :key="user.id"
+            v-bind:profile="user.html_url"
+            v-bind:username="user.login"
+            v-bind:avatar="user.avatar_url"
+          />
         </div>
       </div>
       </div>
@@ -32,22 +37,24 @@
 
 <script>
 import api from '../api';
-import Member from '../components/Member'
+import Member from '../components/Member.vue';
 
 export default {
-    name: "About",
-    components: {
-      Member
-    },
-    data() {
-        return {
-            info: null
-        }
-    },
-    mounted() {
-        api.getMembers()
-        .then(response => (this.info = response.data))
-        .catch(error => console.log(error))
-    }
-}
+  name: 'About',
+  components: {
+    Member,
+  },
+  data() {
+    return {
+      info: null,
+    };
+  },
+  mounted() {
+    api.getMembers()
+      // eslint-disable-next-line no-return-assign
+      .then((response) => (this.info = response.data))
+      // eslint-disable-next-line no-console
+      .catch((error) => console.log(error));
+  },
+};
 </script>

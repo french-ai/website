@@ -9,31 +9,21 @@
 </template>
 
 <script>
-const default_layout = "default";
+const defaultLayout = 'default';
 
 export default {
   computed: {
     layout() {
-      return (this.$route.meta.layout || default_layout) + "-layout";
-    }
+      return `${this.$route.meta.layout || defaultLayout}-layout`;
+    },
   },
-
-  created() {
-    // nothing defined here (when this.$route.path is other than "/")
-    console.log(this.$route, this.$route.meta.layout);
-  },
-
-  updated() {
-    // something defined here whatever the this.$route.path
-    console.log(this.$route, this.$route.meta.layout);
-  }
 };
 </script>
 
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@600&display=swap');
-  
+
   * {
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
