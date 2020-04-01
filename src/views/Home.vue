@@ -15,7 +15,10 @@
             <p class="subtitle">Plus de 2000 membres présents!</p>
             <br/>
             <div class="buttons is-centered">
-                <b-button tag="a" href="https://discord.gg/KdTANuj" target="_blank" type="is-info" size="is-medium">Rejoignez-nous</b-button>
+                <b-button tag="a" href="https://discord.gg/KdTANuj" target="_blank" type="is-info" size="is-medium">
+                  <i class="fab fa-discord"></i>
+                  Rejoignez-nous
+                </b-button>
                 <b-tooltip
                   type="is-light"
                   label="Découvrez les projets des membres de la communauté"
@@ -27,7 +30,9 @@
                     tag="router-link" :to="{ name: 'projects' }"
                     type="is-danger"
                     size="is-medium"
-                  >Projets
+                  >
+                  <i class="fas fa-code"></i>
+                  Projets
                   </b-button>
                 </b-tooltip>
             </div>

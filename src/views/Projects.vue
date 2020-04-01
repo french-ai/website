@@ -9,7 +9,10 @@
             label="Vous pouvez ajouter un projet en complétant une PR"
             position="is-bottom"
           >
-            <b-button tag="a" href="https://github.com/french-ai/" target="_blank" type="is-info">Ajoutez votre projet</b-button>
+            <b-button tag="a" href="https://github.com/french-ai/" target="_blank" type="is-info">
+              <i class="fas fa-plus"></i>
+              Ajoutez votre projet
+            </b-button>
           </b-tooltip>
       </div>
     </div>
