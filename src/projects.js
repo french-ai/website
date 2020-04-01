@@ -8,6 +8,7 @@ export default {
       'creme-ml/creme',
       'dhaitz/mplcyberpunk',
       'french-ai/ressources',
+      "thibo73800/metacar"
     ];
   },
 };
