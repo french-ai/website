@@ -1,24 +1,20 @@
-# website
+# 🧠 french ai
+![Deploy to GitHub Pages](https://github.com/aquadzn/website/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
 
-## Project setup
-```
+[Website](https://aquadzn.github.io/website/)
+
+## Ajouter un projet au site
+
+Modifiez <a href="https://github.com/aquadzn/website/edit/master/src/projects.js" target="_blank"><strong>ce fichier</strong></a> en y ajoutant votre projet GitHub sous la forme `'<username>/<repo>',` puis faites une **pull request**.
+
+## Setup
+
+```bash
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
 npm run serve
-```
 
-### Compiles and minifies for production
-```
+npm run lint
+
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
