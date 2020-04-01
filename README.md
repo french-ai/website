@@ -1,11 +1,11 @@
 # 🧠 french ai
-![Deploy to GitHub Pages](https://github.com/aquadzn/website/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
+![Deploy to GitHub Pages](https://github.com/french-ai/website/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
 
-[Website](https://aquadzn.github.io/website/)
+[Website](https://french-ai.github.io/website/)
 
 ## Ajouter un projet au site
 
-Modifiez <a href="https://github.com/aquadzn/website/edit/master/src/projects.js" target="_blank"><strong>ce fichier</strong></a> en y ajoutant votre projet GitHub sous la forme `'<username>/<repo>',` puis faites une **pull request**.
+Modifiez <a href="https://github.com/french-ai/website/edit/master/src/projects.js" target="_blank"><strong>ce fichier</strong></a> en y ajoutant votre projet GitHub sous la forme `'<username>/<repo>',` puis faites une **pull request**.
 
 ## Setup
 

@@ -9,7 +9,7 @@
             label="Vous pouvez forker le repo pour y ajouter vos projets!"
             position="is-bottom"
           >
-            <b-button tag="a" href="https://github.com/aquadzn/website/edit/master/src/projects.js" target="_blank" type="is-info">
+            <b-button tag="a" href="https://github.com/french-ai/website/edit/master/src/projects.js" target="_blank" type="is-info">
               <i class="fas fa-plus"></i>
               Ajoutez votre projet
             </b-button>
