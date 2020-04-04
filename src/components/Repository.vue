@@ -25,7 +25,7 @@
             <div class="level-item has-text-centered">
               <div>
                 <p class="heading">Stars</p>
-                <p style="color: #f1c40f" class="title is-4">{{ stars }}</p>
+                <p class="title is-4 stars-counter">{{ stars }}</p>
               </div>
             </div>
             <div class="level-item has-text-centered">
@@ -58,8 +58,8 @@ export default {
     profile: String,
     description: String,
     lang: String,
-    stars: String,
-    forks: String,
+    stars: Number,
+    forks: Number,
     url: String,
   },
 };
@@ -75,8 +75,14 @@ export default {
     transform: translateZ(20px);
   }
 
+  .stars-counter {
+    color: #f1c40f
+  }
+
   #desc {
     padding-top: 30px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .card-footer {
