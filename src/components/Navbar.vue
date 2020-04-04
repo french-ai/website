@@ -2,16 +2,16 @@
     <b-navbar>
         <template slot="brand">
           <b-navbar-item id="french-ai" tag="router-link" :to="{ name: 'home' }">
-            <span style="color: #fff;">
+            <span id="website-icon">
               -- 🧠 -
             </span>
-            <span style="color: #1e3799;">
+            <span id="website-name-first">
               french
             </span>
-            <span style="color: #f3f3f3;">
+            <span id="website-name-sep">
               -
             </span>
-            <span style="color: #eb2f06;">
+            <span id="website-name-last">
               ai
             </span>
           </b-navbar-item>
@@ -65,6 +65,22 @@ export default {
 
   #french-ai {
     font-family: 'Bree Serif', serif;
+  }
+
+  #website-icon {
+    color: #fff;
+  }
+
+  #website-name-first {
+    color: #1e3799;
+  }
+
+  #website-name-sep {
+    color: #f3f3f3;
+  }
+
+  #website-name-last {
+    color: #eb2f06;
   }
 
 </style>
