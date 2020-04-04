@@ -77,6 +77,8 @@ export default {
 
   #desc {
     padding-top: 30px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .card-footer {
