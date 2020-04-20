@@ -10,6 +10,7 @@ export default {
       '3outeille/Research-Paper-Summary',
       'MachineLearnia/MachineLearning-tutorial',
       'Maximellerbach/AutonomousCar',
+      'kkuette/TradzQAI',
     ];
   },
 };
