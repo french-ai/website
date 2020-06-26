@@ -10,6 +10,7 @@ export default {
       'french-ai/french-nlp',
       'thibo73800/metacar',
       '3outeille/Research-Paper-Summary',
+      '3outeille/Yaae',
       'MachineLearnia/MachineLearning-tutorial',
       'Maximellerbach/AutonomousCar',
       'kkuette/TradzQAI',
