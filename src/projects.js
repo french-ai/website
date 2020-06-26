@@ -7,6 +7,7 @@ export default {
       'dhaitz/mplcyberpunk',
       'french-ai/ressources',
       'french-ai/reinforcement',
+      'french-ai/french-nlp',
       'thibo73800/metacar',
       '3outeille/Research-Paper-Summary',
       'MachineLearnia/MachineLearning-tutorial',
