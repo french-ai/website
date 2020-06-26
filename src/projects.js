@@ -6,6 +6,7 @@ export default {
       'creme-ml/creme',
       'dhaitz/mplcyberpunk',
       'french-ai/ressources',
+      'french-ai/reinforcement',
       'thibo73800/metacar',
       '3outeille/Research-Paper-Summary',
       'MachineLearnia/MachineLearning-tutorial',
