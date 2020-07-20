@@ -11,6 +11,7 @@ export default {
       'thibo73800/metacar',
       '3outeille/Research-Paper-Summary',
       '3outeille/Yaae',
+      '3outeille/CNNumpy',
       'MachineLearnia/MachineLearning-tutorial',
       'Maximellerbach/AutonomousCar',
       'kkuette/TradzQAI',
