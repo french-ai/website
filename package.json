@@ -8,14 +8,14 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "axios": "^0.19.2",
-    "buefy": "^0.8.13",
-    "core-js": "^3.6.4",
+    "axios": "^0.21.1",
+    "buefy": "^0.8.20",
+    "core-js": "^3.8.2",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "vue": "^2.6.11",
-    "vue-router": "^3.1.6",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.9",
     "vue-tilt.js": "^1.1.1"
   },
   "devDependencies": {
@@ -25,7 +25,7 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.12"
   },
   "eslintConfig": {
     "root": true,
